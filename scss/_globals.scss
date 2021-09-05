@@ -1,0 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: $fontsize-sm;
+  position: relative;
+  // font-family: 'Public Sans',sans-serif;
+}
+
+li {
+  list-style-type: none;
+}

@@ -1,0 +1,13 @@
+
+.about {
+    width: 100%;
+    @include breakpoint-up(large) {
+        width: 75%;
+    }
+}
+
+.image-hero {
+    object-fit: cover;
+    height: 75vh;
+    width: 100%;
+}

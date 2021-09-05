@@ -1,0 +1,14 @@
+
+.contact {
+    background: rgb(144,16,148);
+    background: linear-gradient(90deg, rgba(144,16,148,1) 0%, rgba(16,16,179,1) 100%);
+
+    .bi {
+
+        transition: fill 300ms ease-in-out;
+
+        &:hover {
+            fill: $yellow !important;
+        }
+    }
+} 

@@ -1,0 +1,25 @@
+
+.speakers {
+    background: rgb(144,16,148);
+    background: linear-gradient(90deg, rgba(144,16,148,1) 0%, rgba(16,16,179,1) 100%);
+    position: relative;
+
+    .container-card {
+        background-color: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px);
+    }
+
+}
+
+.card-img-top {
+    height: 275px;
+    object-fit: cover;
+    object-position: top center;
+
+
+}
+
+.card {
+    border: 10px solid white;
+}
+

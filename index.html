@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <title>Conference Landing Page</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navScrollspy" data-bs-offset="64">
+    
+    <!-- ========== HEADER ========== -->
+
+    <header class="vh-100">
+      <!-- Nav -->
+      <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="navScrollspy">
+
+        <div class="container-lg">
+          <!-- Logo -->
+          <a href="#" class="navbar-brand">
+            <img src="./images/logo.svg" alt="Logo" class="img-fluid" />
+          </a>
+          <!-- End Logo -->
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarResponsiveSmall" aria-controls="navbarResponsiveSmall" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarResponsiveSmall">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link active text-uppercase text-white" aria-current="page" >Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#about" class="nav-link text-uppercase text-white">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#speakers" class="nav-link text-uppercase text-white">Speakers</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#program" class="nav-link text-uppercase text-white">Program</a>
+              </li>
+              <li class="nav-item">
+                <a href="#sponsors" class="nav-link text-uppercase text-white">Sponsors</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link text-uppercase text-white">Contact</a>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-warning text-light">Register</button>
+        
+          </div>
+        </div>
+      </nav>
+      <!-- End Nav -->
+
+       <!-- Hero Carousel -->
+
+      <div id="carouselAll" class="carousel slide overflow-hidden" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselAll" data-bs-slide-to="0" aria-label="Slide 1" class="active"></button>
+          <button type="button" data-bs-target="#carouselAll" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="overlay"></div>
+            <img src="./images/conference1.jpeg" alt="First slide" class="carousel-image d-block w-100 vh-100">
+            <div class="carousel-caption top-50 d-flex flex-column justify-content-center ">
+              <h4 class="text-uppercase mb-3 d-none d-lg-block">Hurry Up! Don't Waste Time</h4>
+              <h1 class="text-uppercase mb-3 event-title">Biggest Digital<br/>Conference</h1>
+
+              <div class="d-flex flex-column flex-lg-row justify-content-center">
+
+                <div class="location d-flex justify-content-center align-items-start me-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffc107" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                  <p class="text-uppercase ms-2">Istanbul</p>
+                    
+                </div>
+
+                <div class="calender d-flex justify-content-center align-items-start ms-3">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffc107" class="bi bi-calendar3" viewBox="0 0 16 16">
+                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                  </svg>
+
+                  <p class="text-uppercase ms-2">29 September, 2021</p>
+                    
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img src="./images/conference2.jpeg" alt="Second slide" class="carousel-image d-block w-100 vh-100">
+            <div class="carousel-caption top-50 d-flex flex-column justify-content-center ">
+              <h4 class="text-uppercase mb-3 d-none d-lg-block">Hurry Up! Don't Waste Time</h4>
+              <h1 class="text-uppercase mb-3 event-title">Biggest Digital<br/>Conference</h1>
+
+              <div class="d-flex flex-column flex-lg-row justify-content-center">
+
+                <div class="location d-flex justify-content-center align-items-start me-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffc107" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                  <p class="text-uppercase ms-2">Istanbul</p>
+                    
+                </div>
+
+                <div class="calender d-flex justify-content-center align-items-start ms-3">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffc107" class="bi bi-calendar3" viewBox="0 0 16 16">
+                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                  </svg>
+
+                  <p class="text-uppercase ms-2">29 September, 2021</p>
+                    
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Hero Carousel End -->
+    </header>
+
+    <!-- ========== BOOKING COUNTDOWN ========== -->
+
+    <section class="booking d-flex justify-content-center align-items-center">
+
+      <div class="container booking-countdown-list w-100 py-5">
+
+        <h4 class="text-uppercase text-center text-white fw-lighter mb-3">Time is running out!</h4>
+        <h1 class="text-uppercase text-center text-white mb-3">Book Your Ticket</h1>
+        <p class="text-white text-center fw-light mb-3 lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero voluptatibus eius tempore, eos facere ea obcaecati error non quaerat nostrum soluta.</p>
+
+        <ul class="countdown d-flex flex-row align-items-center justify-content-center p-0 m-0">
+          <li class="days mx-0 mx-lg-4 mt-3 d-flex flex-column align-items-center justify-content-center">
+            <h3 class="text-center text-uppercase text-white p-0 m-0" id="days">26</h3>
+            <p class="text-center text-uppercase text-white p-0 m-0 fw-lighter">days</p>
+          </li>
+          <li class="hours mx-0 mx-lg-4 mt-3 d-flex flex-column align-items-center justify-content-center">
+            <h3 class="text-center text-uppercase text-white p-0 m-0" id="hours">26</h3>
+            <p class="text-center text-uppercase text-white p-0 m-0 fw-lighter">hours</p>
+          </li>
+          <li class="minutes mx-0 mx-lg-4 mt-3 d-flex flex-column align-items-center justify-content-center">
+            <h3 class="text-center text-uppercase text-white p-0 m-0" id="minutes">26</h3>
+            <p class="text-center text-uppercase text-white p-0 m-0 fw-lighter">minutes</p>
+          </li>
+          <li class="seconds mx-0 mx-lg-4 mt-3 d-flex flex-column align-items-center justify-content-center">
+            <h3 class="text-center text-uppercase text-white p-0 m-0" id="seconds">26</h3>
+            <p class="text-center text-uppercase text-white p-0 m-0 fw-lighter">seconds</p>
+          </li>
+        </ul>
+
+      </div>
+
+
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+
+    <section id="about" class="about mx-auto">
+
+      <div class="container py-5">
+        <div class="row mx-auto d-block d-lg-flex justify-content-lg-between">
+
+          <div class="col-12 col-lg-6">
+            <h4 class="text-uppercase fw-lighter mb-3">About Event</h4>
+            <h2 class="text-uppercase mb-3">Biggest 2021 Digital Conference</h2>
+            <p class="lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, ullam quia vitae tempore eaque libero atque placeat rerum iusto sint cumque quam autem blanditiis nesciunt, dolores illo illum ipsum omnis accusamus beatae quasi laudantium fuga natus voluptatum? Nemo labore similique delectus quibusdam in impedit nisi velit ea dolor asperiores dicta, magnam aspernatur quidem quasi quis temporibus, animi earum iste! Ab odit, iure rem cupiditate labore doloremque ut quaerat voluptate perspiciatis numquam a animi? Atque qui iste in dolorum ad consequatur.</p>
+            
+            <div class="d-flex flex-column flex-sm-row justify-content-start mb-1">
+
+              <div class="location d-flex justify-content-start align-items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(144,16,148)" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <p class="text-uppercase ms-2">Istanbul</p>
+                  
+              </div>
+
+              <div class="calender d-flex justify-content-start align-items-start ms-sm-3">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(144,16,148)" class="bi bi-calendar3" viewBox="0 0 16 16">
+                  <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                  <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg>
+
+                <p class="text-uppercase ms-2">29 September, 2021</p>
+                  
+              </div>
+
+            </div>
+            <button type="button" class="btn btn-warning mb-3">Register</button>
+          </div>
+
+          
+
+          <div class="col-12 col-lg-6 position-relative">
+
+            <img src="./images/image-hero.jpg" alt="image-hero" class="image-hero">
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========== SPEAKERS ========== -->
+    <section id="speakers" class="speakers">
+
+      <div class="container-card py-5 d-flex flex-column align-items-center">
+
+        <h4 class="text-uppercase text-center text-white fw-lighter mb-3">Our Speakers</h4>
+        <h1 class="text-uppercase text-center text-white mb-5">Who is speaking?</h1>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 w-75 mx-auto">
+          <div class="col mb-5">
+            <div class="card">
+              <img src="./images/1.jpeg" alt="Speaker Image" class="card-img-top">
+              <div class="card-body mx-auto">
+                <h6 class="card-title text-uppercase">Mike Hardons</h6>
+                <p class="card-text text-center">Digital Guru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card">
+              <img src="./images/2.jpeg" alt="Speaker Image" class="card-img-top">
+              <div class="card-body mx-auto">
+                <h6 class="card-title text-uppercase">Jesscia Brown</h6>
+                <p class="card-text text-center">Enterpreuner</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card">
+              <img src="./images/3.jpeg" alt="Speaker Image" class="card-img-top">
+              <div class="card-body mx-auto">
+                <h6 class="card-title text-uppercase">Cristine Eve</h6>
+                <p class="card-text text-center">Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card">
+              <img src="./images/4.jpeg" alt="Speaker Image" class="card-img-top">
+              <div class="card-body mx-auto">
+                <h6 class="card-title text-uppercase">George Brown</h6>
+                <p class="card-text text-center">Influencer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card">
+              <img src="./images/5.jpeg" alt="Speaker Image" class="card-img-top">
+              <div class="card-body mx-auto">
+                <h6 class="card-title text-uppercase">Kevin Marting</h6>
+                <p class="card-text text-center">Journalist</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card">
+              <img src="./images/6.jpeg" alt="Speaker Image" class="card-img-top">
+              <div class="card-body mx-auto">
+                <h6 class="card-title text-uppercase">Sarah Rose</h6>
+                <p class="card-text text-center">Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5 d-none hiddenSpeakers">
+            <div class="card">
+              <img src="./images/7.jpeg" alt="Speaker Image" class="card-img-top">
+              <div class="card-body mx-auto">
+                <h6 class="card-title text-uppercase">Niki Bloom</h6>
+                <p class="card-text text-center">Influencer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5 d-none hiddenSpeakers">
+            <div class="card">
+              <img src="./images/8.jpeg" alt="Speaker Image" class="card-img-top">
+              <div class="card-body mx-auto">
+                <h6 class="card-title text-uppercase">Tim Burdon</h6>
+                <p class="card-text text-center">Actor</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5 d-none hiddenSpeakers">
+            <div class="card">
+              <img src="./images/9.jpeg" alt="Speaker Image" class="card-img-top">
+              <div class="card-body mx-auto">
+                <h6 class="card-title text-uppercase">Ivan Brooks</h6>
+                <p class="card-text text-center">Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-warning text-white" id="viewAllSpeakers">View All Speakers</button>
+    </div>
+
+
+
+     
+
+
+    </section>
+
+    <!-- ========== PROGRAM ========== -->
+
+    <section id="program" class="program">
+
+      <div class="container mx-auto py-5">
+
+        <h4 class="text-uppercase text-center fw-lighter mb-3">Event Schedule Plan</h4>
+        <h1 class="text-uppercase text-center mb-5">Conference Program</h1>
+
+        <ul class="nav nav-tabs d-flex justify-content-evenly" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button type="button" id="tabFade-1" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tabFade-pane-1" role="tab" aria-controls="tabFade-pane-1" aria-selected="true">Day 1</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button type="button" id="tabFade-2" class="nav-link" data-bs-toggle="tab" data-bs-target="#tabFade-pane-2" role="tab" aria-controls="tabFade-pane-2" aria-selected="false">Day 2</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button type="button" id="tabFade-3" class="nav-link" data-bs-toggle="tab" data-bs-target="#tabFade-pane-3" role="tab" aria-controls="tabFade-pane-3" aria-selected="false">Day 3</button>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div id="tabFade-pane-1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="tabFade-1">
+            <div class="container w-100">
+              <div class="row">
+                <div class="col-3 py-4 d-flex justify-content-center align-items-center">
+                  <img src="./images/1.jpeg" alt="Speaker one" class="img-fluid program-image">
+                </div>
+                <div class="col-9 py-4 d-flex flex-column justify-content-center">
+                  <p class="m-0 mb-1 session-time fw-light">09:00AM TO 10:00AM</p>
+                  <h4 class="text-uppercase m-0 mb-1 session-title">Digital Conference 2021 Introduction</h4>
+                  <span class="session-speaker">by Tim Burdon</span>
+                </div>
+              </div>
+              <div class="row coffee-break">
+                <div class="col-3 py-4 d-flex justify-content-center align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="rgb(144,16,148)" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                  </svg>
+                </div>
+                <div class="col-9 py-4 d-flex flex-column justify-content-center">
+                  <p class="m-0 mb-1 session-time fw-light">10:00AM TO 10:30AM</p>
+                  <h4 class="text-uppercase m-0 mb-1 session-title">ENJOY THE COFFEE BREAK</h4>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 py-4 d-flex justify-content-center align-items-center">
+                  <img src="./images/2.jpeg" alt="Speaker one" class="img-fluid program-image">
+                </div>
+                <div class="col-9 py-4 d-flex flex-column justify-content-center">
+                  <p class="m-0 mb-1 session-time fw-light">10:30AM TO 12:00AM</p>
+                  <h4 class="text-uppercase m-0 mb-1 session-title">Development Stages</h4>
+                  <span class="session-speaker">by Jessica Brown</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 py-4 d-flex justify-content-center align-items-center">
+                  <img src="./images/3.jpeg" alt="Speaker one" class="img-fluid program-image">
+                </div>
+                <div class="col-9 py-4 d-flex flex-column justify-content-center">
+                  <p class="m-0 mb-1 session-time fw-light">12:00AM TO 13:00AM</p>
+                  <h4 class="text-uppercase m-0 mb-1 session-title">Evolution of Digital age</h4>
+                  <span class="session-speaker">by Cristine Eve</span>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div id="tabFade-pane-2" class="tab-pane fade" role="tabpanel" aria-labelledby="tabFade-2">
+            <div class="row">
+              <div class="col-3 py-4 d-flex justify-content-center align-items-center">
+                <img src="./images/4.jpeg" alt="Speaker one" class="img-fluid program-image">
+              </div>
+              <div class="col-9 py-4 d-flex flex-column justify-content-center">
+                <p class="m-0 mb-1 session-time fw-light">09:00AM TO 10:00AM</p>
+                <h4 class="text-uppercase m-0 mb-1 session-title">Digital Conference 2021 Introduction</h4>
+                <span class="session-speaker">by Tim Burdon</span>
+              </div>
+            </div>
+            <div class="row coffee-break">
+              <div class="col-3 py-4 d-flex justify-content-center align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="rgb(144,16,148)" class="bi bi-clock" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                </svg>
+              </div>
+              <div class="col-9 py-4 d-flex flex-column justify-content-center">
+                <p class="m-0 mb-1 session-time fw-light">10:00AM TO 10:30AM</p>
+                <h4 class="text-uppercase m-0 mb-1 session-title">ENJOY THE COFFEE BREAK</h4>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 py-4 d-flex justify-content-center align-items-center">
+                <img src="./images/5.jpeg" alt="Speaker one" class="img-fluid program-image">
+              </div>
+              <div class="col-9 py-4 d-flex flex-column justify-content-center">
+                <p class="m-0 mb-1 session-time fw-light">10:30AM TO 12:00AM</p>
+                <h4 class="text-uppercase m-0 mb-1 session-title">Development Stages</h4>
+                <span class="session-speaker">by Jessica Brown</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 py-4 d-flex justify-content-center align-items-center">
+                <img src="./images/6.jpeg" alt="Speaker one" class="img-fluid program-image">
+              </div>
+              <div class="col-9 py-4 d-flex flex-column justify-content-center">
+                <p class="m-0 mb-1 session-time fw-light">12:00AM TO 13:00AM</p>
+                <h4 class="text-uppercase m-0 mb-1 session-title">Evolution of Digital age</h4>
+                <span class="session-speaker">by Cristine Eve</span>
+              </div>
+            </div>
+          </div>
+          <div id="tabFade-pane-3" class="tab-pane fade" role="tabpanel" aria-labelledby="tabFade-3">
+            <div class="row">
+              <div class="col-3 py-4 d-flex justify-content-center align-items-center">
+                <img src="./images/7.jpeg" alt="Speaker one" class="img-fluid program-image">
+              </div>
+              <div class="col-9 py-4 d-flex flex-column justify-content-center">
+                <p class="m-0 mb-1 session-time fw-light">09:00AM TO 10:00AM</p>
+                <h4 class="text-uppercase m-0 mb-1 session-title">Digital Conference 2021 Introduction</h4>
+                <span class="session-speaker">by Tim Burdon</span>
+              </div>
+            </div>
+            <div class="row coffee-break">
+              <div class="col-3 py-4 d-flex justify-content-center align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="rgb(144,16,148)" class="bi bi-clock" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                </svg>
+              </div>
+              <div class="col-9 py-4 d-flex flex-column justify-content-center">
+                <p class="m-0 mb-1 session-time fw-light">10:00AM TO 10:30AM</p>
+                <h4 class="text-uppercase m-0 mb-1 session-title">ENJOY THE COFFEE BREAK</h4>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 py-4 d-flex justify-content-center align-items-center">
+                <img src="./images/8.jpeg" alt="Speaker one" class="img-fluid program-image">
+              </div>
+              <div class="col-9 py-4 d-flex flex-column justify-content-center">
+                <p class="m-0 mb-1 session-time fw-light">10:30AM TO 12:00AM</p>
+                <h4 class="text-uppercase m-0 mb-1 session-title">Development Stages</h4>
+                <span class="session-speaker">by Jessica Brown</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 py-4 d-flex justify-content-center align-items-center">
+                <img src="./images/9.jpeg" alt="Speaker one" class="img-fluid program-image">
+              </div>
+              <div class="col-9 py-4 d-flex flex-column justify-content-center">
+                <p class="m-0 mb-1 session-time fw-light">12:00AM TO 13:00AM</p>
+                <h4 class="text-uppercase m-0 mb-1 session-title">Evolution of Digital age</h4>
+                <span class="session-speaker">by Cristine Eve</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <!-- ========== SPONSORS ========== -->
+
+    <section id="sponsors" class="sponsors">
+
+      <div class="container w-75 py-5">
+
+        <h4 class="text-uppercase text-center text-white fw-lighter mb-3">Our Sponsorship</h4>
+        <h1 class="text-uppercase text-center text-white mb-5">Official Sponsors</h1>
+
+        <div class="swiper mySwiper ">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/sponsor1.png" alt="Image1" class="p-2"></div>
+            <div class="swiper-slide"><img src="./images/sponsor2.png" alt="Image2" class="p-2"></div>
+            <div class="swiper-slide"><img src="./images/sponsor3.png" alt="Image3" class="p-2"></div>
+            <div class="swiper-slide"><img src="./images/sponsor4.png" alt="Image4" class="p-2"></div>
+            <div class="swiper-slide"><img src="./images/sponsor5.png" alt="Image5" class="p-2"></div>
+            <div class="swiper-slide"><img src="./images/sponsor6.png" alt="Image6" class="p-2"></div>
+            <div class="swiper-slide"><img src="./images/sponsor7.png" alt="Image7" class="p-2"></div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+
+    <section id="contact">
+
+      <div class="newsletter">
+        <div class="container w-75 py-5">
+          <h4 class="text-uppercase text-center fw-lighter mb-3">Newsletter Sign-up</h4>
+          <h1 class="text-uppercase text-center mb-5">Join for news updates</h1>
+          <div class="input-group row mx-auto">
+            <input type="email" class="form-control col-12 col-md-9 mb-3 mb-md-0 me-0 me-md-1" placeholder="Insert Your E-mail" id="inputText">
+            <button type="submit" class="btn btn-warning col-md-3 text-white rounded col-12 ms-0 ms-md-1">Subcribe now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div class="container w-75 py-5">
+          <div class="row">
+            <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex align-items-center justify-content-start justify-content-lg-center">
+              <img src="./images/logo.svg" alt="Logo" class="img-fluid" />
+            </div>
+            <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex flex-column justify-content-center">
+              <h6 class="text-white text-uppercase mb-3">Event Detail</h6>
+              <p class="text-light text-uppercase fw-lighter mb-0">September 29 to 30</p>
+              <p class="text-light text-capitalize fw-lighter mb-2">Ali Muhiddin Hacı Bekir Sokak, Piyalepaşa Apt. No:3 Beşiktaş</p>
+              <a href="#">View Google Map</a>
+            </div>
+            <div class="col-12 col-md-4 flex-column justify-content-center">
+              <h6 class="text-white text-uppercase mb-3">Social Updates</h6>
+              <p class="text-light text-capitalize fw-lighter mb-3">It is a long established fact that a reader will be distracted by the readable content</p>
+              <div class="social-icons d-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-linkedin ms-3" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-twitter ms-3" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <script src="./bundles/bundle.js"></script>
+  </body>
+</html>

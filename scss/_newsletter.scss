@@ -1,0 +1,15 @@
+
+.newsletter {
+
+    .input-group {
+        width: 100%;
+
+        @include breakpoint-up(medium) {
+            width: 75%;
+        }
+
+        @include breakpoint-up(large) {
+            width: 50%;
+        }
+    }
+}
